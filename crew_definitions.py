@@ -2,7 +2,7 @@ import os
 from typing import Dict, Any, Optional, List
 from crewai import Agent, Task, Crew
 from crewai.process import Process
-from crewai.utilities.callbacks import CrewAgentCallbacks
+from crewai.callbacks import CrewAgentCallbacks
 
 class MusicalTheaterCrew:
     """
