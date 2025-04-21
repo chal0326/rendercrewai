@@ -2,7 +2,6 @@ import os
 from typing import Dict, Any, Optional, List
 from crewai import Agent, Task, Crew
 from crewai.process import Process
-from crewai.callbacks import CrewAgentCallbacks
 
 class MusicalTheaterCrew:
     """
@@ -165,8 +164,7 @@ def create_musical_theater_crew(production_name: str) -> Crew:
         agents=agents,
         tasks=tasks,
         verbose=2,
-        process=Process.sequential,
-        callbacks=CrewAgentCallbacks()
+        process=Process.sequential
     )
     
     return crew
